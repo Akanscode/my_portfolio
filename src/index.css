@@ -1,0 +1,56 @@
+@import url("https://fonts.cdnfonts.com/css/circular-std");
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import "animate.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  scroll-behavior: smooth;
+  font-family: "circular std"; /*, sans-serif;*/
+}
+
+.circular-std {
+  font-family: "circular std", sans-serif;
+}
+.space-mono {
+  font-family: "Space Mono", monospace;
+}
+body {
+  background-color: #dcd9d6;
+}
+.active-link {
+  @apply bg-[#835a31] p-[1rem] rounded-full font-[1.6rem] circular-std;
+}
+
+.nav-link {
+  @apply hover:bg-[#cab39c] text-[#fff] font-[1.6rem] rounded-full  p-[1rem] circular-std;
+}
+.social-icon {
+  @apply hover:text-[#a38f7b] hover:shadow-lg  text-black cursor-pointer;
+}
+.contact-me {
+  @apply flex flex-row items-center space-x-4 text-black font-medium text-sm circular-std;
+}
+.header-text {
+  @apply uppercase font-bold text-xl md:text-5xl text-black animate__animated animate__zoomIn circular-std font-mono;
+}
+.inpu_txt {
+  @apply block w-full px-5 py-3 mt-1 placeholder-gray-50 bg-white border border-[#EAECF0] rounded-md circular-std  focus:outline-none;
+}
+.input_textarea {
+  @apply block w-full h-20 px-5 py-3 mt-1 placeholder-gray-50 bg-white border border-[#EAECF0]  rounded-md md:h-48 focus:outline-none;
+}
+.btn {
+  @apply w-full px-6 py-3 mt-6 text-[14px] md:text-[16px]  text-white capitalize transition-colors duration-300 transform bg-[#835a31]  rounded-full circular-std focus:outline-none;
+}
+.label {
+  @apply block mb-2 text-[#101828] text-[14px] md:text-[16px] font-bold circular-std;
+}
+.tab_btn {
+  @apply px-4 py-3 text-black bg-transparent text-[0.60rem] md:text-[0.90rem] rounded-md  cursor-pointer border border-[#835a31];
+}
+.active_tab {
+  @apply bg-[#835a31] text-white px-4 py-3 text-[0.70rem] md:text-[0.90rem]  rounded-md  cursor-pointer;
+}
