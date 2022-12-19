@@ -13,7 +13,7 @@ const Footer = () => {
       <div className="container mx-auto py-6">
         <div className="items-center justify-center flex ">
           <span className="text-white  p-lg text-center">
-            Copyright &copy; {date} Powered by KanscodeHUB.
+            Copyright &copy; {date} KanscodeHUB, All rights reserved..
           </span>
         </div>
       </div>
