@@ -21,15 +21,14 @@ const About = () => {
         </h2>
       </div>
       <div className="grid gap-8 md:grid-cols-2 mt-10">
-        <div className="w-full grid items-center rounded-md shadow-md">
-          <div className=" overflow-hidden w-full rounded-xl">
-            <img
-              src={myImage}
-              alt="ajeleyeOjo"
-              className="w-full h-full object-cover object-top"
-            />
-          </div>
+        <div className=" overflow-hidden w-full rounded-md  shadow-md">
+          <img
+            src={myImage}
+            alt="ajeleyeOjo"
+            className="w-auto h-auto object-cover object-top"
+          />
         </div>
+
         <div className="w-full">
           <div className="mb-[2rem] flex flex-row flex-wrap items-center justify-center  space-x-4">
             <span
@@ -51,7 +50,7 @@ const About = () => {
               Skills
             </span>
           </div>
-          <div className="about__tabs-contents">
+          <div className="flex flex-col items-center justify-center">
             <article className={toggleState === 1 ? "flex" : " hidden"}>
               <div className="content mt-6">
                 <div className="flex flex-col md:flex-row relative border-l border-gray-700">

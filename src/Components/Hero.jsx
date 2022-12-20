@@ -30,7 +30,6 @@ const Hero = () => {
                 <br /> If you're hiring a front-end developer or need a website
                 built, get in touch!
               </p>
-
               <div className=" fixed xl:left-16 left-3 bottom-60 mx-0 flex flex-col space-y-5 max-h-0  ">
                 <a href={`https://twitter.com/SpikeHub_`}>
                   <span className="social-icon">

@@ -112,7 +112,7 @@ export const experience = [
 export const portfolio = [
   {
     cover: emarketimg,
-    text: " This is an E-commerce website landingpage, product page and the product review page using the following tools below",
+    text: " This is an E-commerce website landingpage, product page and the product review page.",
     stack: [
       {
         stackimg: htmlLogo,
@@ -144,7 +144,7 @@ export const portfolio = [
   },
   {
     cover: fitnessimg,
-    text: " This is a GYM website which i designed using the tools below",
+    text: " This is a GYM website which i designed using the following stack.",
     stack: [
       {
         stackimg: htmlLogo,
@@ -208,7 +208,7 @@ export const portfolio = [
   },
   {
     cover: pharezimg,
-    text: "Converted the Figma design into a functional user interface using thee tools below ",
+    text: "Converted the Figma design into a functional user interface using the stack below. ",
     stack: [
       {
         stackimg: htmlLogo,
