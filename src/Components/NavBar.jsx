@@ -26,7 +26,7 @@ const NavBar = () => {
             <AiOutlineUser />
           </a>
           <a
-            href="#projects"
+            href="#project"
             onClick={() => setActiveNav("#project")}
             className={activeNav === "#projects" ? "active-link" : "nav-link"}
           >

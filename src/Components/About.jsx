@@ -55,22 +55,22 @@ const About = () => {
               <div className="content mt-6">
                 <div className="flex flex-col md:flex-row relative border-l border-gray-700">
                   <div className="mb-10 ml-4">
-                    {educational.map((val, id) => (
+                    {educational.map((edu, id) => (
                       <div key={id}>
                         <div className="flex flex-wrap space-x-5 flex-row items-center justify-start text-xs md:text-sm">
                           <div className="absolute w-3 h-3 bg-black rounded-full mt-1.5 -left-1.5 border border-black" />
                           <span className="inline-block px-2 py-1 font-semibold text-white bg-black font-mono capitalize rounded-md">
-                            {val.course}
+                            {edu.course}
                           </span>
                           <h3 className="text-lg font-semibold font-mono text-[#835a31]">
-                            {val.schoolName}
+                            {edu.schoolName}
                           </h3>
                         </div>
                         <p className="font-bold font-mono text-[12px] md:text-[16px]">
-                          {val.year}
+                          {edu.year}
                         </p>
                         <p className="text-black font-mono max-w-md">
-                          {val.Summary}
+                          {edu.Summary}
                         </p>
                       </div>
                     ))}
@@ -84,21 +84,21 @@ const About = () => {
                 <div className="content__one">
                   <div className="flex flex-col md:flex-row relative border-l border-gray-700">
                     <div className="mb-10 ml-4">
-                      {experience.map((val, id) => (
+                      {experience.map((exp, id) => (
                         <div key={id}>
                           <div className="flex flex-wrap gap-4 flex-row items-center justify-start text-xs md:text-sm pt-4">
                             <div className="absolute w-3 h-3 bg-black rounded-full mt-1.5 -left-1.5 border border-black" />
                             <span className="inline-block px-2 py-1 font-semibold text-white bg-black font-mono capitalize rounded-md">
-                              {val.workrole}
+                              {exp.workrole}
                             </span>
                             <h3 className="text-lg font-semibold text-[#835a31] font-mono">
-                              {val.duration}
+                              {exp.duration}
                             </h3>
                           </div>
                           <p className="font-bold font-mono text-[12px] md:text-[16px]">
                             Responsibility:
                           </p>
-                          {val.activities.map((task, id) => (
+                          {exp.activities.map((task, id) => (
                             <div key={id}>
                               <ul className="list-outside list-disc text-left text-black font-mono text-sm">
                                 <li>{task.list}</li>
@@ -122,20 +122,20 @@ const About = () => {
                     </h4>
                   </div>
                   <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4">
-                    {Skills.map((val, id) => (
+                    {Skills.map((skill, id) => (
                       <div
                         key={id}
                         className="p-4 flex flex-col space-y-2 items-center justify-center"
                       >
                         <div className="bg-white shadow-lg p-2">
                           <img
-                            src={val.cover}
-                            alt={val.alt}
+                            src={skill.cover}
+                            alt={skill.alt}
                             className="w-[100px] h-[100px]"
                           />
                         </div>
                         <p className="font-mono text-black text-[12px] md:text-[14px]">
-                          {val.text}
+                          {skill.text}
                         </p>
                       </div>
                     ))}

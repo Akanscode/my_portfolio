@@ -1,31 +1,46 @@
-import React, { useRef } from "react";
+import React from "react";
+import { useFormik } from "formik";
+import * as Yup from "yup";
 import emailjs from "@emailjs/browser";
 
 const ContactUs = () => {
-  const form = useRef();
+ const validationSchema = Yup.object().shape({
+    user_name: Yup.string().required("Full name is required"),
+    user_email: Yup.string().email("Invalid email address").required("Email address is required"),
+    subject: Yup.string().required("Subject is required"),
+    message: Yup.string().required("Message is required"),
+  });
 
-  const sendEmail = (e) => {
-    e.preventDefault();
+  const formik = useFormik({
+    initialValues: {
+      user_name: "",
+      user_email: "",
+      subject: "",
+      message: "",
+    },
+    validationSchema,
+    onSubmit: (values, { resetForm }) => {
+      emailjs
+        .sendForm(
+          import.meta.env.VITE_EMAILJS_SERVICE_ID,
+          import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+          form.current,
+          import.meta.env.VITE_EMAILJS_PUBLIC_ID
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+            alert("SUCCESS!");
+          },
+          (error) => {
+            console.log(error.text);
+            alert("FAILED...", error);
+          }
+        );
+      resetForm();
+    },
+  });
 
-    emailjs
-      .sendForm(
-        import.meta.env.VITE_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-        form.current,
-        import.meta.env.VITE_EMAILJS_PUBLIC_ID
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          alert("SUCCESS!");
-        },
-        (error) => {
-          console.log(error.text);
-          alert("FAILED...", error);
-        }
-      );
-    e.target.reset();
-  };
   return (
     <section id="contact">
       <div className=" container w-full mx-auto py-16 lg:py-20">
@@ -52,7 +67,7 @@ const ContactUs = () => {
                   />
                 </svg>
 
-                <span className="mt-2">Lagos, Nigeria</span>
+                <span className="mt-2">Ibadan, Nigeria</span>
               </a>
 
               <a
@@ -88,15 +103,19 @@ const ContactUs = () => {
                 <span className="mt-2">akanscoded@gmail.com.</span>
               </a>
             </div>
-            <form className="mt-6" ref={form} onSubmit={sendEmail}>
+            <form className="mt-6" onSubmit={formik.handleSubmit}>
               <div className="flex-1">
                 <label className="label">Full name</label>
                 <input
-                  type="name"
+                  type="text"
                   name="user_name"
                   placeholder="Enter your full name"
                   className="inpu_txt"
+                  {...formik.getFieldProps("user_name")}
                 />
+                {formik.touched.user_name && formik.errors.user_name ? (
+                  <div className="error-message">{formik.errors.user_name}</div>
+                ) : null}
               </div>
 
               <div className="flex-1 mt-6">
@@ -106,7 +125,11 @@ const ContactUs = () => {
                   name="user_email"
                   placeholder="Enter your email address"
                   className="inpu_txt"
+                  {...formik.getFieldProps("user_email")}
                 />
+                {formik.touched.user_email && formik.errors.user_email ? (
+                  <div className="error-message">{formik.errors.user_email}</div>
+                ) : null}
               </div>
               <div className="flex-1 mt-6">
                 <label className="label ">Subject</label>
@@ -115,7 +138,11 @@ const ContactUs = () => {
                   name="subject"
                   placeholder="Enter your subject"
                   className="inpu_txt"
+                  {...formik.getFieldProps("subject")}
                 />
+                {formik.touched.subject && formik.errors.subject ? (
+                  <div className="error-message">{formik.errors.subject}</div>
+                ) : null}
               </div>
 
               <div className="w-full mt-6">
@@ -124,7 +151,11 @@ const ContactUs = () => {
                   name="message"
                   className="input_textarea"
                   placeholder="Enter your Message"
+                  {...formik.getFieldProps("message")}
                 ></textarea>
+                {formik.touched.message && formik.errors.message ? (
+                  <div className="error-message">{formik.errors.message}</div>
+                ) : null}
               </div>
 
               <button className="btn" type="submit">

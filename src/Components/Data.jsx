@@ -10,8 +10,8 @@ import swiperjsLogo from "/src/assets/swiperjslogo.png";
 
 //portfolio images
 import emarketimg from "/src/assets/e-commerceimage.png";
-import resturantimg from "/src/assets/resturantimage.png";
-import fitnessimg from "/src/assets/fitnessimage.png";
+import resturantimg from "/src/assets/yagiresturantimg.png";
+import rentrideimg from "/src/assets/rentarideimg.png"
 import skrintimg from "/src/assets/skrintimg.png";
 import foodstoreimg from "/src/assets/foodsrore.png";
 import pharezimg from "/src/assets/pharezimage.png";
@@ -143,8 +143,8 @@ export const portfolio = [
     url1: "https://e-commence.vercel.app",
   },
   {
-    cover: fitnessimg,
-    text: " This is a GYM website which i designed using the following stack.",
+    cover: rentrideimg,
+    text: " This is a Car renting website which i designed using the following stack.",
     stack: [
       {
         stackimg: htmlLogo,
@@ -159,24 +159,24 @@ export const portfolio = [
         alt: "javascript",
       },
       {
-        stackimg: swiperjsLogo,
-        alt: "swiperjs",
+        stackimg: reactLogo,
+        alt: "reactjs",
       },
       {
         stackimg: tailwindLogo,
         alt: "tailwindcss",
       },
       {
-        stackimg: alpineJsLogo,
-        alt: "alpinejs",
+        stackimg: nextjsLogo,
+        alt: "nextjs",
       },
     ],
-    url: "https://github.com/Akanscode/fitness_website-",
-    url1: "https://fitness-website-ten.vercel.app",
+    url: "https://github.com/Akanscode/rent_a_ride",
+    url1: "https://rent-a-ride-alpha.vercel.app/",
   },
   {
     cover: resturantimg,
-    text: "A simple landing page showcasing what Cuisine Restaurant is about, their projects, customer review, and more.",
+    text: "A simple landing page showcasing what Yagi Restaurant is about, their projects, customer review, and more.",
     stack: [
       {
         stackimg: htmlLogo,
@@ -191,20 +191,20 @@ export const portfolio = [
         alt: "javascript",
       },
       {
-        stackimg: swiperjsLogo,
-        alt: "swiperjs",
+        stackimg: reactLogo,
+        alt: "reactjs",
       },
       {
         stackimg: tailwindLogo,
         alt: "tailwindcss",
       },
       {
-        stackimg: alpineJsLogo,
-        alt: "alpinejs",
+        stackimg: nextjsLogo,
+        alt: "nextjs",
       },
     ],
-    url: "https://github.com/Akanscode/restaurants-website-",
-    url1: "https://restaurants-website-eight.vercel.app",
+    url: "https://github.com/Akanscode/yagi_restaurant",
+    url1: "https://yagi-restaurant-nbpq-go005pbl1-akanscode.vercel.app/",
   },
   {
     cover: pharezimg,

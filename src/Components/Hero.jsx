@@ -21,9 +21,9 @@ const Hero = () => {
                 Frontend Engineer
               </h4>
               <p className="font-semibold text-[14px] md:text-[18px] text-black max-w-lg">
-                I'm a front-end developer in Nigeria, and I have over{""}
+                I'm a front-end developer in Nigeria, and I have {""}
                 <span className="text-[#835a31] font-bold text-[20px] capitalize px-1">
-                  1 year
+                  2 years
                 </span>
                 {""}
                 experience into my web development journey.
@@ -50,7 +50,7 @@ const Hero = () => {
               <div className="flex space-x-5 ">
                 <a
                   target="_blank"
-                  href={`https://drive.google.com/file/d/1mEATBr-1bF0qhY9mQvQbgQMyQ_MO2Sk4/view?usp=share_link`}
+                  href={`https://docs.google.com/document/d/1ASvOUdjkqk5vt1DG-sgLjdyDL6pjNm7FVKnd2c5dhsk/edit?usp=sharing`}
                 >
                   <button className="mt-4 text-[14px] md:text-[18px] font-bold border border-[#835a31] text-[#835a31] rounded-full px-2 md:px-4 py-3 cursor-pointer ">
                     <span className=" flex items-center justify-center space-x-5">
@@ -59,7 +59,7 @@ const Hero = () => {
                     </span>
                   </button>
                 </a>
-                <a href="">
+                <a href="#contact">
                   <button className="mt-4 text-[14px] md:text-[18px] bg-[#cab39c] text-black rounded-full px-2 md:px-4 py-3 ">
                     Hire Me
                   </button>
