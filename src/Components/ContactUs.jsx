@@ -114,7 +114,7 @@ const ContactUs = () => {
                   {...formik.getFieldProps("user_name")}
                 />
                 {formik.touched.user_name && formik.errors.user_name ? (
-                  <div className="error-message">{formik.errors.user_name}</div>
+                  <div className="error-message text-red-500">{formik.errors.user_name}</div>
                 ) : null}
               </div>
 
@@ -128,7 +128,7 @@ const ContactUs = () => {
                   {...formik.getFieldProps("user_email")}
                 />
                 {formik.touched.user_email && formik.errors.user_email ? (
-                  <div className="error-message">{formik.errors.user_email}</div>
+                  <div className="error-message text-red-500">{formik.errors.user_email}</div>
                 ) : null}
               </div>
               <div className="flex-1 mt-6">
@@ -141,7 +141,7 @@ const ContactUs = () => {
                   {...formik.getFieldProps("subject")}
                 />
                 {formik.touched.subject && formik.errors.subject ? (
-                  <div className="error-message">{formik.errors.subject}</div>
+                  <div className="error-message text-red-500">{formik.errors.subject}</div>
                 ) : null}
               </div>
 
@@ -154,7 +154,7 @@ const ContactUs = () => {
                   {...formik.getFieldProps("message")}
                 ></textarea>
                 {formik.touched.message && formik.errors.message ? (
-                  <div className="error-message">{formik.errors.message}</div>
+                  <div className="error-message text-red-500">{formik.errors.message}</div>
                 ) : null}
               </div>
 
