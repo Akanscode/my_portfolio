@@ -21,14 +21,15 @@ const Hero = () => {
                 Frontend Engineer
               </h4>
               <p className="font-semibold text-[14px] md:text-[18px] text-black max-w-lg">
-                I'm a front-end developer in Nigeria, and I have {""}
+                  I'm a skilled front-end developer based in Nigeria,  {""}
                 <span className="text-[#835a31] font-bold text-[20px] capitalize px-1">
-                  2 years
+                 with a solid two-year
                 </span>
                 {""}
-                experience into my web development journey.
-                <br /> If you're hiring a front-end developer or need a website
-                built, get in touch!
+                journey in web development. 
+                <br />
+                If you're seeking a proficient front-end developer or need a website
+                brought to life, let's connect and bring your vision to reality!
               </p>
               <div className=" fixed xl:left-16 left-3 bottom-60 mx-0 flex flex-col space-y-5 max-h-0  ">
                 <a href={`https://twitter.com/SpikeHub_`}>
