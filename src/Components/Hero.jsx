@@ -22,7 +22,7 @@ const Hero = () => {
               </h4>
               <p className="font-semibold text-[14px] md:text-[18px] text-black max-w-lg">
                   I'm a skilled front-end developer based in Nigeria,  {""}
-                <span className="text-[#835a31] font-bold text-[20px] capitalize px-1">
+                <span className="text-[#835a31] font-bold text-[18px] capitalize px-1">
                  with a solid two-year
                 </span>
                 {""}
@@ -32,7 +32,7 @@ const Hero = () => {
                 brought to life, let's connect and bring your vision to reality!
               </p>
               <div className=" fixed xl:left-16 left-3 bottom-60 mx-0 flex flex-col space-y-5 max-h-0  ">
-                <a href={`https://twitter.com/SpikeHub_`}>
+                <a href={`https://twitter.com/KanscodedHub`}>
                   <span className="social-icon">
                     <FaTwitter size={15} />
                   </span>

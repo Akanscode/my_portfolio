@@ -15,6 +15,7 @@ import rentrideimg from "/src/assets/rentarideimg.png"
 import skrintimg from "/src/assets/skrintimg.png";
 import foodstoreimg from "/src/assets/foodsrore.png";
 import pharezimg from "/src/assets/pharezimage.png";
+import portifolioimage from "/src/assets/portfolioimage.png"
 
 export const Skills = [
   {
@@ -112,7 +113,7 @@ export const experience = [
 export const portfolio = [
   {
     cover: emarketimg,
-    text: " This is an E-commerce website landingpage, product page and the product review page.",
+    text: " Crafted an E-commerce platform's landing page, integrating a meticulously detailed product page and review section. Leveraged the prowess of the stacks",
     stack: [
       {
         stackimg: htmlLogo,
@@ -144,7 +145,7 @@ export const portfolio = [
   },
   {
     cover: rentrideimg,
-    text: " This is a Car renting website which i designed using the following stack.",
+    text: " I engineered the landing page for a cutting-edge car renting application, harnessing the power of the following technologies to create a seamless and engaging user experience.",
     stack: [
       {
         stackimg: htmlLogo,
@@ -176,7 +177,7 @@ export const portfolio = [
   },
   {
     cover: resturantimg,
-    text: "A simple landing page showcasing what Yagi Restaurant is about, their projects, customer review, and more.",
+    text: "I crafted a landing page for YagiRestaurant, a restaurant brand, employing a blend of the following technologies.",
     stack: [
       {
         stackimg: htmlLogo,
@@ -208,7 +209,7 @@ export const portfolio = [
   },
   {
     cover: pharezimg,
-    text: "Converted the Figma design into a functional user interface using the stack below. ",
+    text: "Transformed UI designs into adaptable, reusable code components using a sophisticated tech stack ",
     stack: [
       {
         stackimg: htmlLogo,
@@ -239,8 +240,8 @@ export const portfolio = [
     url1: "https://www.phareztech.com",
   },
   {
-    cover: skrintimg,
-    text: " This is a cloned Portofolio Landingpage using the following stack.",
+    cover: portifolioimage,
+    text: " This showcases my portfolio—a meticulously crafted compilation developed through the integration of the technologies to highlight my work and skills.",
     stack: [
       {
         stackimg: htmlLogo,
@@ -264,8 +265,8 @@ export const portfolio = [
         alt: "reactjs",
       },
     ],
-    url: "https://github.com/Akanscode/skrint-dev",
-    url1: "skrint-dev.vercel.app",
+    url: "https://github.com/Akanscode/my_portfolio",
+    url1: "https://kanscodehub.vercel.app/",
   },
   {
     cover: foodstoreimg,
