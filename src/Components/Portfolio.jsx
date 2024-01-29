@@ -24,7 +24,7 @@ const Portfolio = () => {
                 />
               </div>
               <div className="p-4">
-                <p className="text-[16px] md:text-[18px] font-mono tracking-wide">
+                <p className="text-[12px] md:text-[16px] max-w-md font-mono tracking-wide">
                   {val.text}
                 </p>
                 <div className="flex space-x-2 items-center justify-between px-4 py-4">
