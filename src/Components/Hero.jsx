@@ -22,7 +22,7 @@ const Hero = () => {
               </h4>
               <p className="font-semibold text-[14px] md:text-[18px] text-black max-w-lg">
                   I'm a skilled front-end developer based in Nigeria,  {""}
-                <span className="text-[#835a31] font-semibold text-[18px] capitalize px-1">
+                <span className="text-[#835a31] font-semibold italic text-[18px] capitalize px-1">
                  with a solid two-year
                 </span>
                 {""}
