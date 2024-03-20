@@ -79,6 +79,28 @@ export const educational = [
 
 export const experience = [
   {
+    workrole: "Frontend Developer @Techies Collab and Upskill on Live Project",
+    duration: "Nov,2023- Present",
+    activities: [
+      {
+        list: "Designed and developed user interfaces for web applications using HTML, CSS, and JavaScript, Reactjs, TailwindCSS and others related Stacks.",
+      },
+      {
+        list: " Collaborated with backend developers to integrate frontend components with server-side logic",
+      },
+      {
+        list: "  Conducted code reviews and provided constructive feedback to team members to ensure high-quality code.",
+      },
+      {
+        list: "Optimizing web pages for maximum speed and scalability.",
+      },
+      {
+        list: "Developing features to enhance the user experience.",
+      },
+    ],
+  },
+ 
+  {
     workrole: "Junior Developer @ Phareztech",
     duration: "Oct,2022- Present",
     activities: [
