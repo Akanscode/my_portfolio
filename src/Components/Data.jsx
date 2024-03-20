@@ -6,7 +6,7 @@ import gitLogo from "/src/assets/githublogo.png";
 import reactLogo from "/src/assets/reactlogo.png";
 import nextjsLogo from "/src/assets/nestjslogo.png";
 import alpineJsLogo from "/src/assets/alpinelogo.png";
-import swiperjsLogo from "/src/assets/swiperjslogo.png";
+import typelogo from "/src/assets/typeimage.png";
 
 //portfolio images
 import emarketimg from "/src/assets/e-commerceimage.png";
@@ -32,6 +32,11 @@ export const Skills = [
     cover: javascriptLogo,
     alt: javascriptLogo,
     text: "Javascript",
+  },
+   {
+    cover: typelogo,
+    alt: typelogo,
+    text: "Typescript",
   },
   {
     cover: tailwindLogo,
