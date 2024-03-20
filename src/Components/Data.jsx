@@ -12,7 +12,7 @@ import typelogo from "/src/assets/typeimage.png";
 import emarketimg from "/src/assets/e-commerceimage.png";
 import resturantimg from "/src/assets/yagiresturantimg.png";
 import rentrideimg from "/src/assets/rentarideimg.png"
-import skrintimg from "/src/assets/skrintimg.png";
+//import skrintimg from "/src/assets/skrintimg.png";
 import foodstoreimg from "/src/assets/foodsrore.png";
 import pharezimg from "/src/assets/pharezimage.png";
 import portifolioimage from "/src/assets/portfolioimage.png"
