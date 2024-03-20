@@ -5,7 +5,7 @@ import tailwindLogo from "/src/assets/tailwindlogo.png";
 import gitLogo from "/src/assets/githublogo.png";
 import reactLogo from "/src/assets/reactlogo.png";
 import nextjsLogo from "/src/assets/nestjslogo.png";
-import alpineJsLogo from "/src/assets/alpinelogo.png";
+//import alpineJsLogo from "/src/assets/alpinelogo.png";
 import typelogo from "/src/assets/typeimage.png";
 
 //portfolio images
@@ -58,11 +58,7 @@ export const Skills = [
     alt: nextjsLogo,
     text: "NextJs",
   },
-  {
-    cover: alpineJsLogo,
-    alt: alpineJsLogo,
-    text: "AlpineJs",
-  },
+ 
 ];
 
 export const educational = [
