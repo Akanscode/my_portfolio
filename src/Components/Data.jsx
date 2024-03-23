@@ -5,8 +5,10 @@ import tailwindLogo from "/src/assets/tailwindlogo.png";
 import gitLogo from "/src/assets/githublogo.png";
 import reactLogo from "/src/assets/reactlogo.png";
 import nextjsLogo from "/src/assets/nestjslogo.png";
-//import alpineJsLogo from "/src/assets/alpinelogo.png";
+import alpineJsLogo from "/src/assets/alpinelogo.png";
 import typelogo from "/src/assets/typeimage.png";
+import swiperjsLogo from "/src/assets/swiperjslogo.png"
+
 
 //portfolio images
 import emarketimg from "/src/assets/e-commerceimage.png";
